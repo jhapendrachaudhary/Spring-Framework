@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.Collections.Employee" name="Employee">
+        <property name="name" value="loren" />
+        <property name="phoneNo">
+            <list>
+                <value>9847580010</value>
+                <value>9847589000</value>
+                <value>9799387877</value>
+                <value>9800330455</value>
+            </list>
+        </property>
+        <property name="address">
+            <set>
+                <value>ktm</value>
+                <value>Pokhara</value>
+                <value>butwal</value>
+                <value>tillotama</value>
+            </set>
+        </property>
+        <property name="course">
+            <map>
+                <entry key="java" value="2 month"/>
+                <entry key="Python" value="1 Month"/>
+                <entry key="DSA" value="4 month"/>
+            </map>
+        </property>
+        <property name="pro">
+    <props>
+        <prop key="Teacher">hello vai</prop>
+        <prop key="field">Java</prop>
+    </props>
+        </property>
+
+    </bean>
+
+</beans>

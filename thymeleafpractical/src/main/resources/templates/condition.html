@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://com.thyemeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1 th:style="${isActive} ? 'color:green' : 'color:red'" th:text="${isActive} ? 'Active' : 'Not Active'"></h1>
+<h1 th:if="${gender} == 'M'">Male</h1>
+<h1 th:unless="${gender} == 'M'">Female</h1>
+
+<div th:switch="#{Lists.size(num)}"> 
+<h1 th:case="'0'">zero element</h1>
+<h1 th:case="'2'">two element</h1>
+<h1 th:case="'3'">three element</h1>
+<h1 th:case="*">More than one</h1>
+</div>
+</body>
+</html>

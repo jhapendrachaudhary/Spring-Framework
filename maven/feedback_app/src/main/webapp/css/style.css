@@ -1,0 +1,159 @@
+*{
+margin : 0;
+padding : 0;
+}
+/* Apply a gradient background to the navbar */
+.navbar {
+    background: linear-gradient(135deg, #1e1e1e, #343a40); /* Dark gradient */
+    padding: 15px 0;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar:hover {
+    background: linear-gradient(135deg, #343a40, #212529);
+}
+
+/* Navbar brand (logo) styling */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f9fa !important; /* Light color */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: #f8f9fa !important;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Active and hover states */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+    color: #0dcaf0 !important; /* Bootstrap primary color */
+}
+
+/* Button styling */
+.btn-outline-light {
+    border-color: #f8f9fa;
+    color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.btn-primary {
+    background-color: #0dcaf0;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0bbbe6;
+}
+
+/* Responsive navbar for mobile */
+@media (max-width: 992px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .d-flex {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+/* Apply a gradient background to the entire page */
+body {
+    background: linear-gradient(135deg, #1e1e1e, #343a40);
+    color: #ffffff; /* Light text for contrast */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Optional: Add a smooth transition for background changes */
+body {
+    transition: background 0.5s ease-in-out;
+}
+
+/* Add a fixed full-screen background image (optional) */
+body {
+    background-image: url('../image/image3.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+h1{
+ display: flex;
+            justify-content: center;
+            align-items: center;
+             font-size: 3rem;
+              padding: 20px 30px;
+}
+
+        /* Center the button */
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh; /* Full screen height */
+        }
+
+        /* Modern Button Styling */
+        .modern-btn {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #0dcaf0, #6610f2); /* Gradient effect */
+            color: white;
+            border: none;
+            transition: all 0.3s ease-in-out;
+            text-transform: uppercase;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Hover Effect */
+        .modern-btn:hover {
+            background: linear-gradient(135deg, #6610f2, #0dcaf0);
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Click Effect */
+        .modern-btn:active {
+            transform: scale(0.95);
+        }
+
+    .feedback-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            color : black;
+        }
+        .feedback-container h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .btn-submit {
+            background: linear-gradient(135deg, #0dcaf0, #6610f2);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn-submit:hover {
+            background: linear-gradient(135deg, #6610f2, #0dcaf0);
+            transform: scale(1.05);
+        }

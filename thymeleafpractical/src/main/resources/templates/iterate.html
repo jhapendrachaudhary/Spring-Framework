@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>friuts</title>
+</head>
+<body>
+<h1>skkkkkk</h1>
+<h1 th:text="${list}"></h1>
+<ul>
+<li th:each="n :${list}">
+<span th:text="${n}"></span>
+</li>
+</ul>
+</body>
+</html>

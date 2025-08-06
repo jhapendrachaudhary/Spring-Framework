@@ -1,0 +1,21 @@
+<!DOCTYPE html >
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>hello world!</h1>
+
+<h1 th:text="${name}"></h1>
+<h1 th:text="${#strings.length(name)}"></h1>
+
+<div th:with="a=20,b=30, n=${name}">
+<h1 th:text="${a}"></h1>
+<h1 th:text="'value of b is '+${b}"></h1>
+<h1 th:text="${n}"></h1>
+<h1 th:text="${a+b}"></h1>
+
+</div>
+</body>
+</html>

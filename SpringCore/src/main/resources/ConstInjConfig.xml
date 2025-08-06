@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="org.example.ConstructorInjection.Documentation" name="docref">
+        <constructor-arg value="DOC" name="hello this is DOC certificates. "/>
+        <constructor-arg value="NOC" name="this is NOC certificates"/>
+    </bean>
+    <bean class="org.example.ConstructorInjection.Person" name="person">
+        <constructor-arg name="doc" ref="docref"/>
+        <constructor-arg name="jobs">
+            <list>
+                <value>Cooker</value>
+                <value>Trainer</value>
+                <value>Designer</value>
+                <value>Software Developer </value>
+            </list>
+        </constructor-arg>
+        <constructor-arg name="name" value="hello"/>
+        <constructor-arg name="personId" value="30"/>
+        <constructor-arg name="previousJobs">
+            <map>
+                <entry key="Teacher" value="2 Month"/>
+                <entry key="Freelancer" value="7 Month"/>
+            </map>
+        </constructor-arg>
+
+    </bean>
+
+
+</beans>

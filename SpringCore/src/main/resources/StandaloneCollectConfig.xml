@@ -1,0 +1,31 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <util:list id="Studnames" list-class="java.util.LinkedList">
+        <value>Alice</value>
+        <value>Bob</value>
+        <value>Charlie</value>
+    </util:list>
+
+    <util:map map-class="java.util.TreeMap" id="courses">
+        <entry key="Spring-Framework" value="6 Month"/>
+        <entry key="Django-Framework" value="3 Month"/>
+        <entry key="Hibernate-Framework" value="4 Month"/>
+    </util:map>
+    <util:properties id="benefits">
+        <prop key="Experience">2 years </prop>
+        <prop key="level">Skill Up</prop>
+        <prop key="Salary">100k</prop>
+    </util:properties>
+
+    <bean class="org.example.StandaloneCollections.Person" name="person1">
+        <property name="students" ref="Studnames"/>
+        <property name="benefits" ref="benefits"/>
+        <property name="courses" ref="courses"/>
+    </bean>
+</beans>

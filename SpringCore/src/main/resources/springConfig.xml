@@ -1,0 +1,27 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean  name="student1" class="org.example.Students">
+        <property name="name">
+            <value> jhapye</value>
+        </property>
+        <property name="rollno">
+            <value>30</value>
+        </property>
+        <property name="address">
+            <value>universe</value>
+        </property>
+    </bean>
+
+    <bean class="org.example.Students " name="student2">
+        <property name="name" value="hjk"/>
+        <property name="rollno" value="20"/>
+        <property name="address" value="lmao"/>
+    </bean>
+
+<bean class="org.example.Students" name="student3" p:name="hello" p:rollno="23" p:address="jhacc"/>
+    <!-- more bean definitions go here -->
+</beans>
